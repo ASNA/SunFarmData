@@ -11,4 +11,39 @@
 9. Click "OK".
 10. After a few seconds, the new Database "SunFarm" will appear. Make sure you see 19 Tables and 16 Views.
 
+## Creating DataGate DB Name
+The SunFarm Application uses a DataGate named database. The name expected by the Application is "SunFarm".
+
+Assuming that you have `ASNA DataGate Monitor 16` installed, the following easy steps can be performed to create the *DB Name*.
+
+1. Run `ASNA DataGate Monitor 16`.
+2. Right-click on "All Sources" node on the tree.
+3. Select "Add a .NET Database Name" menu, with the option "Private Source".
+4. Leave the name of the "Server" as "*LOCAL".
+5. Check the "Is SQL Database". The "Label" changes to "SQL" (as a grayed-out read-only entry).
+6. From the login options, select the first one "Use Windows Active Directory Authentication".
+![ASNA DataGate Monitor](images/datagate-monitor-new-db-name.png)
+7. Click on "Advanced Properties" action on the right panel.
+
+<br>
+<br>
+
+## Configuring ASNA DataGate Linear Client
+**DG Linear** Client is the DataGate for SQL Server configuration that does not require a **DataGate Server Engine** running on your system. **DG Linear** Client is the recommended configuration for Development. 
+
+To identify a DB Name as a **DG Linear** Client configuration you need to change the "Platform Attribute" value, from: `*SQLOLEDB` to `*SQCLIENT`.
+
+![ASNA DataGate Monitor](images/datagate-monitor-linear-config.png)
+
+Once you have change the "Platform Attribute" value, save your configuration by clicking on the "Apply" button.
+
+> **DG Linear** Client requires a license key.
+
+## Testing the DB Name
+You can test the connectivity to the SunFarm Database, using the Action "Test Connection".
+
+If the SQL Database is running and the configuration (including the license) is correct, you will see a popup window indicating: "SunFarm connection test results: Success".
+
+> A common scenario where connection may fails, is when property changes were not applied. To rule-out this possibility, exit `ASNA DataGate Monitor 16`, run it again, and verify that all the configured values are correct. 
+
 
