@@ -1,6 +1,9 @@
 # SunFarmData
+This Repository contains the Sample Data expected by the Sample Application described in [SunFarm Migration Enhancement Guide](https://asna.github.io/SunFarm/). 
 
-1. Install Microsoft SQL Server. You may use the free Microsoft SQL Server Developer Edition.
+The following steps show you how to get a copy of the Sample Data, from this repository to your test Web Server.
+
+1. Install Microsoft SQL Server. You may use the free [Microsoft SQL Server Developer Edition](https://www.microsoft.com/en-us/sql-server/sql-server-downloads).
 2. Create SQL Server instance.
 3. Identify path where instance stores the databases by default. Typically a path such as `C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA`.
 4. Copy the files in this repository named: `SunFarm.mdf` and `SunFarm_log.ldf` to path indicated in step 3.
