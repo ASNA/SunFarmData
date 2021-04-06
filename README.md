@@ -44,7 +44,7 @@ To identify a DB Name as a **DG Linear** Client configuration you need to change
 
 Once you have changed the "Platform Attribute" value, save your configuration by clicking on the "Apply" button.
 
-> **DG Linear** Client requires a ASNA Product license key.
+> **DG Linear** Client requires a ASNA Product license key when used with traditional .NET Framework applications like the DG Monitor (See below). For use exclusively with .NET Core apps a license is not needed.
 
 <br>
 <br>
