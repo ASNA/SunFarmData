@@ -1,5 +1,5 @@
 # SunFarmData
-This Repository contains the Sample Data expected by the Sample Application described in [SunFarm Migration Enhancement Guide](https://asna.github.io/SunFarm/). 
+This Repository contains the Sample Data expected by the Sample Application described in [Enhancing ASNA Monarch® Migration Guide](https://asna.github.io/SunFarm/). 
 
 The following steps show you how to get a copy of the Sample Data, from this repository to your test Web Server.
 
